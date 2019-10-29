@@ -1,0 +1,21 @@
+/* body { */
+    /* background: url('../img/banner-bg.jpg'); */
+    /* background-size: cover; */
+/* } */
+
+/* img { */
+    /* opacity: 0.1; */
+/* } */
+
+.footer {
+position: fixed;
+left:0px;
+bottom:0px;
+height:50px;
+width:100%;
+background: aliceblue;
+background-color: #666666;
+color:white;
+border-top: 5px solid #0BADA6;
+}
+
