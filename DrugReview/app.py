@@ -135,7 +135,7 @@ def process():
 @app.route("/ml_process")
 def ml_process():
     try:
-        return render_template("process.html", image_name= "img/process_flow.png")
+        return render_template("ml_process.html", image_name= "img/process_flow.png")
     except:
         abort(404)
 
