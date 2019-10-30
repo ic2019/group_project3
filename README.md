@@ -10,17 +10,27 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
 
 #### Following analysis are done.
 
-  1)Can we predict the sentiment behind every drug review made?
-  2)Can we find the best medicine for different conditions?
-  3)Which are the top 10 drugs used?
-  4)Which are the top 10 conditions reported?
-  5)Which are the least 10 conditions reported?
-  6)Which are the least 10 drugs used?
-  7)What's the distribution of rating for this dataset?
-  8)Is ther any correlation between rating and usefullness?
-  9)Can we find any correlation between length of reviews and usefulCount.
-  10)Do we see any trend in the sentiment of drug reviews over the period of 10 years?
-  11)Do we see any trend in number of conditions reported and drugs used over the 10 years? 
+   - Can we predict the sentiment behind every drug review made?
+
+   - Can we find the best medicine for different conditions?
+
+   - Which are the top 10 drugs used?
+   
+   - Which are the top 10 conditions reported?
+
+   - Which are the least 10 conditions reported?
+
+   - Which are the least 10 drugs used?
+
+   - What's the distribution of rating for this dataset?
+
+   - Is ther any correlation between rating and usefullness?
+
+   - Can we find any correlation between length of reviews and usefulCount.
+
+   - Do we see any trend in the sentiment of drug reviews over the period of 10 years?
+
+   - Do we see any trend in number of conditions reported and drugs used over the 10 years? 
 
   ## Tasks
   ### Extract / Transform / Load
@@ -32,6 +42,7 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
   ### Transform
 
   As the data was huge with over 2M records, we used PySpark for cleaning ( removing null values and other unwanted values) using [Jupyter notebook](DrugReview/Scripts/Data_Cleaning_EDA.ipynb). We laso performed feature extraction by creating new columns for machine learning purposes and also converted date in string type to date type.
+
 
   Also created new aggregated dataframes for EDA purposes.
 
@@ -49,7 +60,7 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
 
   ![method](DrugReview/static/img/methodology.png)
 
-  Using the cleaned data from AWS, performed Vader Sentiment analysis on review. A training set of data was created separately from the data set. The training data was fitted and transformed using NLTK Python Machine Learning Pipeline. The resulting features were created based on TF-IDF analysis and sentiment was vectorized using Vader Sentiment analysis.
+  Using the cleaned data from AWS, performed Vader Sentiment analysis on review. A training set of data was created separately from the data set. The training data was fitted and transformed using NLTK Python Machine Learning Pipeline. The resulting features were created based on TF-IDF analysis and sentiment was vectorized using Vader Sentiment analysis. All machine learning work using Pyston was done in Jupyter Notebook [here](https://github.com/ic2019/group_project3/blob/master/DrugReview/Scripts/drug_machineLearning_revised.ipynb)
 
   Using the newly transformed data, a Support Vector Machine classifier model is trained. This model was used to predict whether a given submission from the test set was capturing sentiment properly or not. Accuracy was determined to be ~93%.
   
@@ -57,6 +68,7 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
   
   ![process](DrugReview/static/img/process_flow.png)
 
+  
   ### Home Page
 
   ![home](DrugReview/static/img/home.png)
@@ -82,10 +94,28 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
   
   ### Limitations
 
+  **Below are some of the challenges and limitations we came across in our project.**
+
+    - Prediction accuracy is ~93%
+
+    -	The model is ignorant of past health condition
+
+    -	As review is based on drug so model is biased predicting only this condition
+
+    -	The sentiment is categorized as only positive or negative so model can’t predict neutral comments.
+
+
   ### Next Steps
+
+   **Below are the ideas what additional analysis can be done.**
+
+    - Predicting the best medicine based on the condition
 
   ### Resources
 
+  [UCI Machine Learning](https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29)
+
+  [medium.com]https://medium.com/
  
 
   ### How to use this app.
