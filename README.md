@@ -95,6 +95,7 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
   ### Limitations
 
   **Below are some of the challenges and limitations we came across in our project.**
+  ![limitations](DrugReview/static/img/limitation.jpg)
 
     - Prediction accuracy is ~93%
 
@@ -107,9 +108,10 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
 
   ### Next Steps
 
-   **Below are the ideas what additional analysis can be done.**
+   **Below are the ideas on what additional work can be done.**
+   ![next steps](DrugReview/static/img/nextsteps.jpg)
 
-    - Predicting the best medicine based on the condition
+    - Predict the best medicine based on the conditions using this dataset.
 
   ### Resources
 
