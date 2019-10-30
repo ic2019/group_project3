@@ -12,6 +12,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 #from sqlalchemy.orm import Session, exc
 #from sqlalchemy import create_engine, func
 #import pandas as pd
+import os
 
 
 # App config.
@@ -126,15 +127,15 @@ def api(_string):
 
 @app.route("/process")
 def process():
-    try:
-        return render_template("process.html")
+    try:        
+        return render_template("process.html", image_name = "img/methodology.png")
     except:
         abort(404)
 
 @app.route("/ml_process")
 def ml_process():
     try:
-        return render_template("ml_process")
+        return render_template("process.html", image_name= "img/process_flow.png")
     except:
         abort(404)
 

@@ -16,7 +16,8 @@
                <br>
               <p class="text-justify">
                 Given the importance of proper drugs to cure medical health our team set out to use machine learning and natural language processing in an attempt to identify sentiment from the review and rating provided by the user for various medicine.
-              </p>        
+              </p>
+              <p class="font-weight-bold text-info">Team members: Nilam Roy and Indu</p> 
             <br>
           </div>
       <div class="col img-responsive">
@@ -26,60 +27,59 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
           <a href="/"><img src="{{ url_for('static', filename='img/dash.gif') }}" class="d-block w-100" alt="..."></a>
-          <br>
+        
           <h5>A Dashboard for Drug stats</h5>
-        <p>Need to add text here</p>
+        <p>In this dashboard, we get to view the top and bottom 10 health  conditions and top and bottom 10 drugs used by patients.</p>
       </div>
       <div class="carousel-item">
           <a href="/"><img src="{{ url_for('static', filename='img/allDrugs.gif') }}" class="d-block w-100" alt="..."></a>
-          <br>
-          <h5>All drugs with with their conditions</h5>
-          <p>A text has to come here.</p>
+        
+          <h5>All drugs with their conditions</h5>
+          <p>Here you can get a peek into various drugs and the health conditions they are used for in a single plot.</p>
       </div>
       <div class="carousel-item">
         <a href="/"><img src="{{ url_for('static', filename='img/ratingDist.gif') }}" class="d-block w-100" alt="..."></a>
         <h5>Distribution of user rating</h5>
-        <br>
-        <p>A text needs to be added here.</p>
+      
+        <p>You can view the distribution of user review rating. Overall, are people satisfied with the drugs?</p>
       </div>
       <div class="carousel-item">
         <a href="/"><img src="{{ url_for('static', filename='img/reviewLength.gif') }}" class="d-block w-100" alt="..."></a>
-        <br>
-        <h5>Yearly Drug </h5>
-        <p>A text needs to be added here.</p>
+      
+        <h5>Review Length Vs Useful Count</h5>
+        <p>Is there any correlation between review length and usefulCount?We get to find out how others perceive usefulness in length of a review.</p>
       </div>
       <div class="carousel-item">
             <a href="/"><img src="{{ url_for('static', filename='img/yearlyDrug.gif') }}" class="d-block w-100" alt="..."></a>
-            <br>
+          
             <h5>Yearly trend in Drug Reviews</h5>
-        <p>A text needs to be added here</p>
+        <p>Do we see any yearly trend in number of drug reviews from 2008-2017?</p>
       </div>
       <div class="carousel-item">
-                <a href="/"><img src="{{ url_for('static', filename='img/confusion.png') }}" class="d-block w-100" alt="..."></a>
-                <br>
+                <!-- <a href="/"><img src="{{ url_for('static', filename='img/confusion.png') }}" class="d-block w-100" alt="..."></a> -->
+                <a href="/"><img src="{{ url_for('static', filename='img/alt_cm.png') }}" class="d-block w-100" alt="..."></a>
                 <h5>Confusion Matrix</h5>
-        <p>A text needs to come here</p>
+        <p>How do we we verify the accuracy of our model for various classes? What's the precision and recall values?</p>
       </div>
       <div class="carousel-item">
-        <a href="/"><img src="{{ url_for('static', filename='img/word_cloud_happy.png') }}" class="d-block w-100" alt="..."></a>
-        <br>
+        <!-- <a href="/"><img src="{{ url_for('static', filename='img/word_cloud_happy.png') }}" class="d-block w-100" alt="..."></a> -->
+        <a href="/"><img src="{{ url_for('static', filename='img/wc_happy.png') }}" class="d-block w-100" alt="..."></a>
+        
         <h5>Word Cloud - Happy</h5>
-        <p>A text needs to come here</p>
+        <p>A cloud of all lexicons from drug reviews with positive sentiments.</p>
       </div>
       <div class="carousel-item">
-        <a href="/"><img src="{{ url_for('static', filename='img/word_cloud_sad.png') }}" class="d-block w-100" alt="..."></a>
-        <br>
+        <a href="/"><img src="{{ url_for('static', filename='img/wc_sad.png') }}" class="d-block w-100" alt="..."></a>
+        
         <h5>Word Cloud - Sad</h5>
-        <p>A text needs to come here</p>
+        <p text-info>A cloud of all lexicons from drug reviews with negative sentiments.</p>
       </div>
     </div>
 </div>
 
   <!-- end of carousal   -->
 </div>
-</div>
-<p class="card-text text-dark"><marquee direction="left">Fortune 500 companies represent two-thirds of the U.S. GDP with $13.7 trillion in revenues, $1.1 trillion in profits, $22.6 trillion in market value, and employ 28.7 million people worldwide.<a href="https://fortune.com/fortune500/">(Read More..)</a></marquee></p>
-</div>
+
 
 <!-- Styles -->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
