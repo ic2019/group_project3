@@ -159,20 +159,19 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
         mkdir static/models
       ```
 
-   5. from Drugreview folder, run _app.py_
+  5. from Drugreview folder, run _app.py_
 
-    ```
-       python app.py
+     ```
+        python app.py
+     ```
 
-    ```
-
-    As soon as the app starts to run, navigate to _127.0.0.1:5000_.
+   As soon as the app starts to run, navigate to _127.0.0.1:5000_.
 
     Before the landing page is rendered, both the vectorizer and model will be loaded and you are all set to go.
 
-    _console logs_
+   _console logs_
 
-    ![console](DrugReview/static/img/flask.png)
+   ![console](DrugReview/static/img/flask.png)
 
 
   
