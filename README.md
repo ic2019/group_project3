@@ -91,11 +91,10 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
 
   Link to [Tableau story](https://public.tableau.com/profile/indu.chandrasekharan#!/vizhome/drug_analysis/DrugReviewsAnalysis?publish=yes)
 
-  
+  ![Happy_Word_Cloud](DrugReview/static/)
   ### Limitations
 
   **Below are some of the challenges and limitations we came across in our project.**
-  ![limitations](DrugReview/static/img/limitation.jpg)
 
     - Prediction accuracy is ~93%
 
@@ -108,23 +107,68 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
 
   ### Next Steps
 
-   **Below are the ideas on what additional work can be done.**
-   ![next steps](DrugReview/static/img/nextsteps.jpg)
+   **Below are the ideas what additional analysis can be done.**
 
-    - Predict the best medicine based on the conditions using this dataset.
+    - Predicting the best medicine based on the condition
+
+  ### Conclusions
+   
+   **Below are the conclusions from this project**
+
+   - We were able to predict the sentiment of patients based on drug reviews with ~93% accuracy.
+   
+   - Overall, 70% of patients, seems to be happy with the drugs consumed out of 2 million records we had.
+
+   - We were able to see that, as the length of the review increases, the usefullness also increases.
+
+   - We are able to provide the list of top medicines used, based on any selected conditions.
+
+   - We also could find a trend that over the 10 years period, there's an increase in drug usage as well as the number of health conditions reported.
 
   ### Resources
 
   [UCI Machine Learning](https://archive.ics.uci.edu/ml/datasets/Drug+Review+Dataset+%28Drugs.com%29)
 
-  [medium.com]https://medium.com/
+  [medium.com](https://medium.com/)
  
 
   ### How to use this app.
 
-  1. Clone this repo.
+  1. Clone this [repo](https://github.com/ic2019/group_project3).
 
-  2. activate your python virtual enviornement or create a new one. Install all dependencies using _pip install -r requirements.txt_
+  2. Activate your python virtual enviornement or create a new one. Install all dependencies using _pip install -r requirements.txt_
+
+  3. Change directory to the cloned folder.
+     ```
+     cd DrugReview
+     ```
+  4. As this project used a huge dataset of over 2 million records, we were unable to save the dataset or the trained model inside our current github but the model is saved in S3.
+     
+     Download the vectorizer as well as the machine learning model from S3 using following links.
+
+     [vectorizer](https://icdrive1.s3.amazonaws.com/MLmodels/vectorizer.sav)
+     
+     [model](https://icdrive1.s3.amazonaws.com/MLmodels/drugML.sav)
+     
+     Put the downloaded files in _static/models_ folder
+
+     ```        
+        mkdir static/models
+      ```
+    5. from Drugreview folder, run _app.py_
+
+    ```
+    python app.py
+
+    ```
+    As soon as the app starts to run, navigate to _127.0.0.1:5000_.
+
+    Before the landing page is rendered, both the vectorizer and model will be loaded and you are all set to go.
+
+    _console logs_
+
+    ![console](static/img/flask.png)
+
 
   
  
