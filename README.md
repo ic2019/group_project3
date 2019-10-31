@@ -158,8 +158,8 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
      ```        
         mkdir static/models
       ```
-    5. from Drugreview folder, run _app.py_
 
+   5. from Drugreview folder, run _app.py_
 
     ```
        python app.py
