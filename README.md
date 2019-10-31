@@ -91,9 +91,9 @@ In this project, we have used the bigdata [Drug Review Dataset](https://archive.
 
   Link to [Tableau story](https://public.tableau.com/profile/indu.chandrasekharan#!/vizhome/drug_analysis/DrugReviewsAnalysis?publish=yes)
 
-  ![Happy_Word_Cloud](DrugReview/static/wc_happy.png)
+  ![Happy_Word_Cloud](DrugReview/static/img/wc_happy.png)
 
-  ![Sad_Word_Cloud](DrugReview/static/wc_sad.png)
+  ![Sad_Word_Cloud](DrugReview/static/img/wc_sad.png)
   
   ### Limitations
 
