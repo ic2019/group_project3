@@ -1,2 +1,2 @@
-rds_password = "Miandu77"
+rds_password = ""
 rds_user = "root"
